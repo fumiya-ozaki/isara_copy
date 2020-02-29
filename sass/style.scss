@@ -616,6 +616,9 @@ $b:blue;
           margin-top: 20px;
           text-align: center;
         }
+        &__arrow{
+          display: none;
+        }
       }
       &__right{
         padding: 20px 50px;
@@ -637,7 +640,7 @@ $b:blue;
 }
 
 
-// タブレットレイアウト-----------------------------------------------------------------------------------
+// タブレットレイアウト---------------------------------------------------------------------------------------
 @media (max-width:1000px) {
   .responsive{
     background-color:yellow;
@@ -1313,6 +1316,56 @@ $b:blue;
         }
       }
     }
+  }
+}
+
+.flow-chart{
+  text-align: left;
+  &__wrapper{
+    &__top{
+      background-color: $sub-orange;
+      border-radius: 10px;
+      padding:10px ;
+      display: flex;
+      flex-direction: column;
+      &__left{
+        display: flex;
+        position: relative;
+        &__icon{
+          img{
+            height: 50px;
+          }
+        }
+        &__text{
+          margin-top: 5px;
+          padding-left:10px ;
+          text-align: center;
+        }
+        &__arrow{
+          position: absolute;
+          right: 10px;
+          display: block;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      &__right{
+        padding: 5px;
+        &__top{
+
+        }
+        &__bottom{
+          margin-top: 50px;
+          font-size: 13px;
+        }
+      }
+    }
+  &__bottom{
+    display: none;
+    img{
+    width: 100%;
+    }
+  }
   }
 }
 
