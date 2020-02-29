@@ -1,0 +1,927 @@
+* {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "M PLUS 1p";
+}
+
+@media screen and (min-width: 670px) {
+  .br-pc {
+    display: block;
+  }
+
+  .br-sp {
+    display: none;
+  }
+}
+@media screen and (max-width: 670px) {
+  .br-pc {
+    display: none;
+  }
+
+  .br-sp {
+    display: block;
+  }
+}
+.responsive {
+  background-color: red;
+  width: 25%;
+  height: 30px;
+  position: fixed;
+}
+
+.header__container {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  padding: 20px 0;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+}
+.header__container__left-box {
+  display: flex;
+  width: 40%;
+  position: relative;
+}
+.header__container__left-box .logo {
+  height: 40px;
+  line-height: 75px;
+}
+.header__container__left-box .logo img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.header__container__left-box div {
+  display: block;
+  align-self: flex-end;
+}
+.header__container__right-box {
+  display: flex;
+  align-items: center;
+}
+.header__container__right-box a {
+  width: 300px;
+  background-color: #da6a63;
+  line-height: 50px;
+  height: 50px;
+  border-radius: 30px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+.header__container__right-box2 {
+  display: none;
+}
+
+.container {
+  background-image: url("../isara_images/pc_visual1.jpeg");
+  background-size: cover;
+  padding-top: 180px;
+  height: 500px;
+}
+.container .main-visual {
+  width: 50%;
+  margin: 0 auto;
+}
+.container .main-visual__title {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+.container .main-visual__logo {
+  margin: 0 auto;
+  display: block;
+}
+.container .main-visual img {
+  height: 120px;
+  width: 320px;
+}
+.container .main-visual__text {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+.conversion {
+  background-color: #ebb94d;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+.conversion .conversion-wrapper {
+  width: 80%;
+}
+.conversion__title1 {
+  padding: 20px 0;
+}
+.conversion__title2 {
+  background-color: white;
+  color: red;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+}
+.conversion__btn {
+  background-color: #da6a63;
+  font-size: 30px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 90px;
+  margin-bottom: 20px;
+}
+.conversion__text1 {
+  padding-bottom: 20px;
+}
+.conversion__text2 {
+  padding-bottom: 20px;
+}
+.conversion__text3 {
+  padding-bottom: 20px;
+}
+.conversion__sns-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.conversion__sns-btn a {
+  text-decoration: none;
+  color: white;
+}
+.conversion__sns-btn .sns-btn__twitter {
+  display: flex;
+  justify-content: center;
+  background-color: #1a95e0;
+  border-radius: 5px;
+  padding: 10px;
+}
+.conversion__sns-btn .sns-btn__like {
+  display: flex;
+  justify-content: center;
+  background-color: #1777f2;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 15px;
+}
+.conversion__sns-btn .sns-btn__share {
+  display: flex;
+  justify-content: center;
+  background-color: #1777f2;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 15px;
+}
+
+.introduction {
+  font-size: 25px;
+  text-align: center;
+}
+.introduction__title {
+  padding-top: 50px;
+}
+.introduction__text1 {
+  padding-top: 50px;
+}
+.introduction__text2 {
+  padding-top: 50px;
+}
+.introduction__text3 {
+  padding-top: 50px;
+}
+.introduction__text3 span {
+  background: linear-gradient(transparent 70%, #ebb94d 90%);
+}
+.introduction__image {
+  margin-top: 20px;
+  background-image: url("../isara_images/panorama.jpg");
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten;
+  background-size: cover;
+  height: 200px;
+}
+
+.introduction2 {
+  display: none;
+}
+
+.about {
+  background-color: #fef5e0;
+  text-align: center;
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+.about__title {
+  padding: 80px;
+}
+.about__wrapper {
+  background-color: white;
+  border: solid 2px #ebb94d;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.about__wrapper__title {
+  padding: 30px 0;
+}
+.about__wrapper__icons {
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+.about__wrapper__icons__icon {
+  padding: 5px;
+  width: 25%;
+}
+.about__wrapper__icons__icon__text {
+  font-size: 13px;
+}
+
+.about-second {
+  background-image: url("../isara_images/pc_visual2.jpeg");
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten;
+  text-align: center;
+}
+.about-second__title {
+  padding: 50px;
+  font-size: 30px;
+}
+.about-second__text {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.about-second__wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.about-second__wrapper__box {
+  background-color: white;
+  border-radius: 5px;
+  width: 30%;
+  width: 30%;
+  height: 200px;
+  padding: 15px;
+}
+.about-second__wrapper__box__step {
+  padding: 10px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #ebb94d;
+  border-radius: 5px;
+  color: white;
+}
+.about-second__wrapper__box__title {
+  padding: 30px 0;
+}
+.about-second__bottom {
+  color: white;
+  padding: 50px 0;
+  background-color: #036eaa;
+  font-size: 20px;
+}
+.about-second__bottom span {
+  color: #ebb94d;
+}
+
+.learning {
+  text-align: center;
+  font-size: 30px;
+}
+.learning__title {
+  padding: 60px;
+  font-size: 30px;
+}
+.learning__text1 {
+  margin-bottom: 30px;
+}
+.learning__wrapper {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.learning__wrapper__icon img {
+  width: 80%;
+}
+.learning__text2 {
+  font-size: 20px;
+  padding: 30px;
+}
+
+.merit {
+  background-color: #fef5e0;
+  text-align: center;
+  padding: 50px;
+}
+.merit__title1 {
+  font-size: 20px;
+  padding-top: 30px;
+}
+.merit__title2 {
+  font-size: 30px;
+  padding-bottom: 50px;
+}
+.merit__wrapper {
+  margin: 30px auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+.merit__wrapper__box {
+  width: 30%;
+}
+.merit__wrapper__box img {
+  width: 100%;
+}
+.merit__wrapper__box__title {
+  color: #ebb94d;
+  font-size: 20px;
+  padding: 10px 0;
+}
+.merit__support__wrapper {
+  padding: 20px 0;
+  background-color: white;
+  border: solid 1px #ebb94d;
+  width: 80%;
+  margin: 30px auto 0;
+}
+.merit__support__wrapper__title {
+  font-size: 30px;
+  color: #ebb94d;
+}
+.merit__support__wrapper__text1 {
+  margin: 40px 0;
+  font-size: 20px;
+}
+.merit__support__wrapper__text2 {
+  margin-bottom: 20px;
+}
+.merit__notice {
+  padding-top: 20px;
+}
+
+.teacher {
+  background-image: url("../isara_images/nature.jpeg");
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.6);
+  background-blend-mode: lighten;
+  text-align: center;
+  padding: 60px;
+}
+.teacher__title {
+  font-size: 25px;
+  padding-bottom: 30px;
+}
+.teacher__text {
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+.teacher__teachers {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.teacher__teachers__box {
+  width: 45%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.teacher__teachers__box__icon {
+  position: relative;
+  top: 20px;
+  z-index: 5;
+}
+.teacher__teachers__box__icon img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+.teacher__teachers__box__profile {
+  z-index: 2;
+  top: -20px;
+  position: relative;
+  border: solid 3px white;
+  padding: 30px;
+}
+.teacher__teachers__box__profile__title {
+  padding: 30px 0 15px 0;
+}
+
+.why {
+  background-color: #ebb94d;
+  text-align: center;
+  padding: 50px 0;
+}
+.why__icon {
+  margin: 0 auto;
+  color: #ebb94d;
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  line-height: 100px;
+  background-color: white;
+}
+.why__text {
+  color: white;
+  font-size: 35px;
+  margin-top: 40px;
+}
+
+.answer {
+  text-align: center;
+  padding: 50px;
+}
+.answer__title {
+  font-size: 25px;
+}
+.answer__title span {
+  font-size: 15px;
+}
+.answer__text {
+  padding: 30px 0;
+  font-size: 13px;
+}
+.answer__person__wrapper {
+  margin: 0 auto;
+  width: 55%;
+}
+.answer__person__wrapper__box {
+  display: flex;
+  margin: 50px 0;
+}
+.answer__person__wrapper__box__picture img {
+  border: solid 3px #ebb94d;
+  object-fit: cover;
+  height: 250px;
+  width: 200px;
+}
+.answer__person__wrapper__box__texts {
+  padding: 20px;
+  text-align: left;
+  color: gray;
+  font-size: 18px;
+}
+.answer__person__wrapper__box__texts__name {
+  padding-top: 10px;
+}
+.answer__person__wrapper__box__texts__name span {
+  text-decoration: underline;
+}
+
+.class {
+  background-image: url("../isara_images/pc_visual6.jpeg");
+  background-size: cover;
+  color: black;
+  text-align: center;
+  padding: 80px 0 0 0;
+}
+.class__title-a {
+  font-size: 30px;
+}
+.class__title-b {
+  font-size: 20px;
+  margin: 30px 0;
+}
+.class__container {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+}
+.class__container__wrapper {
+  border: solid 2px #036eaa;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.class__container__wrapper__title {
+  background-color: #036eaa;
+  padding: 15px;
+}
+.class__container__wrapper ul {
+  list-style: none;
+  background-color: white;
+}
+.class__container__wrapper ul li {
+  padding: 15px;
+}
+.class__container__wrapper ul .a {
+  border-top: dashed 1px gray;
+}
+.class__bottom {
+  margin-top: 30px;
+  padding: 20px 0;
+  color: white;
+  background-color: #036eaa;
+}
+
+.flow {
+  text-align: center;
+  padding: 50px;
+}
+.flow__title {
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+.flow__icons {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+.flow__icons__icon__image {
+  display: flex;
+  align-items: center;
+}
+.flow__icons__icon__image img {
+  height: 170px;
+}
+.flow__icons__icon__image .icon {
+  font-size: 20px;
+  padding: 0 5px;
+  color: #ebb94d;
+}
+.flow__icons__icon__text {
+  padding-top: 10px;
+  font-size: 12px;
+}
+
+.flow-chart {
+  padding: 0 150px;
+  text-align: center;
+}
+.flow-chart__wrapper__top {
+  background-color: #fef5e0;
+  border-radius: 10px;
+  padding: 30px 80px;
+  display: flex;
+}
+.flow-chart__wrapper__top__left__text {
+  margin-top: 20px;
+  text-align: center;
+}
+.flow-chart__wrapper__top__right {
+  padding: 20px 50px;
+}
+.flow-chart__wrapper__top__right__bottom {
+  margin-top: 50px;
+  font-size: 13px;
+}
+.flow-chart__wrapper__bottom img {
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .responsive {
+    background-color: yellow;
+    width: 50%;
+    height: 30px;
+  }
+
+  .header__container {
+    width: 100%;
+  }
+  .header__container__left-box {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+  }
+  .header__container__left-box .logo {
+    width: 114px;
+  }
+  .header__container__left-box div {
+    align-self: flex-start;
+  }
+  .header__container__right-box a {
+    font-size: 13px;
+  }
+
+  .container .main-visual {
+    width: 100%;
+  }
+  .conversion .conversion-wrapper {
+    width: 100%;
+  }
+  .introduction {
+    font-size: 17px;
+  }
+  .introduction2 {
+    display: none;
+  }
+
+  .about__title {
+    padding: 30px;
+    font-size: 20px;
+  }
+  .about__text {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  .about__wrapper {
+    width: 100%;
+  }
+  .about__wrapper__title {
+    font-size: 17px;
+  }
+  .about__wrapper__icons {
+    margin-bottom: 50px;
+  }
+  .about-second__title {
+    font-size: 20px;
+  }
+  .about-second__wrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .about-second__wrapper__box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .about-second__bottom {
+    color: white;
+    padding: 50px 0;
+    background-color: #036eaa;
+    font-size: 16px;
+  }
+  .about-second__bottom span {
+    color: #ebb94d;
+  }
+
+  .learning__text1 {
+    font-size: 20px;
+  }
+  .learning__wrapper {
+    width: 100%;
+  }
+  .merit {
+    padding: 10px;
+  }
+  .merit__wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+  .merit__wrapper__box {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .merit__wrapper__box__title {
+    padding: 30px;
+  }
+  .merit__wrapper__box__text {
+    margin-bottom: 20px;
+  }
+  .merit__support__wrapper {
+    width: 100%;
+  }
+  .merit__support__wrapper__title {
+    font-size: 20px;
+  }
+  .merit__support__wrapper__text1 {
+    font-size: 15px;
+  }
+  .merit__support__wrapper__text2 {
+    font-size: 15px;
+  }
+
+  .teacher {
+    padding: 20px;
+  }
+  .teacher__teachers {
+    width: 100%;
+    flex-direction: column;
+  }
+  .teacher__teachers__box {
+    margin-bottom: 0px;
+    width: 100%;
+  }
+  .teacher__teachers__box__icon img {
+    height: 150px;
+    width: 150px;
+  }
+  .answer__person__wrapper {
+    width: 100%;
+  }
+  .class {
+    padding: 0;
+  }
+  .class__container {
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .class__container__wrapper {
+    margin-top: 20px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .flow {
+    padding: 10px;
+  }
+  .flow__title {
+    padding-bottom: 0;
+  }
+  .flow__icons {
+    display: none;
+  }
+  .flow-chart {
+    padding: 10px;
+  }
+  .flow-chart__wrapper__top {
+    background-color: #fef5e0;
+    border-radius: 10px;
+    padding: 20px 10px;
+    display: flex;
+  }
+  .flow-chart__wrapper__top__left__text {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .flow-chart__wrapper__top__right {
+    padding: 20px 50px;
+  }
+  .flow-chart__wrapper__top__right__bottom {
+    margin-top: 50px;
+    font-size: 13px;
+  }
+  .flow-chart__wrapper__bottom img {
+    width: 100%;
+  }
+}
+@media (max-width: 670px) {
+  .responsive {
+    background-color: blue;
+    width: 100%;
+    height: 30px;
+  }
+
+  .header__container {
+    padding: 0;
+  }
+  .header__container__left-box__text {
+    font-size: 15px;
+  }
+  .header__container__left-box .logo img {
+    height: 20%;
+    width: 20%;
+  }
+  .header__container__right-box {
+    display: none;
+  }
+  .header__container__right-box2 {
+    height: 75px;
+    width: 75px;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #da6a63;
+    border-radius: 5px;
+  }
+  .header__container__right-box2__text {
+    font-size: 13px;
+    color: white;
+  }
+  .header__container__right-box2 .menu-icon {
+    color: white;
+    margin-bottom: 5px;
+    font-size: 35px;
+  }
+
+  .container .main-visual {
+    widht: 100%;
+  }
+  .container .main-visual__text {
+    font-size: 18px;
+  }
+
+  .conversion {
+    font-size: 18px;
+  }
+  .conversion__title2 {
+    font-size: 13px;
+  }
+  .conversion__btn {
+    font-size: 20px;
+  }
+  .conversion__sns-btn {
+    justify-content: center;
+  }
+  .introduction {
+    display: none;
+  }
+
+  .introduction2 {
+    display: block;
+    font-size: 15px;
+    text-align: center;
+  }
+  .introduction2__title {
+    margin-top: 40px;
+  }
+  .introduction2__text1 {
+    margin-top: 40px;
+  }
+  .introduction2__text2 {
+    margin-top: 40px;
+  }
+  .introduction2__text3 {
+    margin-top: 40px;
+  }
+  .introduction2__text4 {
+    margin: 40px;
+  }
+  .introduction2__text4 span {
+    background: linear-gradient(transparent 70%, #ebb94d 90%);
+  }
+  .introduction2__image {
+    height: 150px;
+    background-image: url("../isara_images/panorama.jpg");
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: lighten;
+    background-size: cover;
+  }
+
+  .about-second__title {
+    font-size: 16px;
+  }
+  .about-second__text {
+    font-size: 16px;
+  }
+  .about-second__bottom {
+    font-size: 13px;
+  }
+  .merit__title1 {
+    padding: 10px;
+  }
+  .merit__title2 {
+    padding: 10px;
+  }
+  .merit__wrapper {
+    width: 100%;
+  }
+  .merit__wrapper__box {
+    width: 100%;
+  }
+  .merit__wrapper__box img {
+    height: 100px;
+    object-fit: cover;
+  }
+  .merit__wrapper__box__title {
+    font-size: 18px;
+    padding: 10px 0;
+  }
+  .merit__wrapper__box__text {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+  .teacher {
+    padding: 20px;
+  }
+  .teacher__teachers__box {
+    width: 100%;
+  }
+  .teacher__teachers__box__profile__title {
+    font-size: 13px;
+  }
+  .teacher__teachers__box__profile__text {
+    font-size: 13px;
+  }
+
+  .why__text {
+    font-size: 22px;
+  }
+
+  .answer {
+    padding: 5px;
+  }
+  .answer__person__wrapper__box__picture img {
+    height: 130px;
+    width: 130px;
+  }
+  .answer__person__wrapper__box__texts {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+  .class__container__wrapper ul {
+    font-size: 15px;
+  }
+}
