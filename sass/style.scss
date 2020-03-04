@@ -27,15 +27,9 @@ $a:gray;
 $b:blue;
 // mixin設定
 
-.responsive{
-  background-color:red;
-  width:25%;
-  height: 30px;
-  position: fixed;
-}
 
 // pcレイアウト
-// ヘッダー(PC)
+// header(PC)
 .header{
   &__container{
     // max-width: calc(100% - 20px);
@@ -63,7 +57,6 @@ $b:blue;
       div{
         display: block;
         align-self:flex-end;
-
       }
     }
     &__right-box{
@@ -79,6 +72,9 @@ $b:blue;
         color: white;
         text-decoration: none;
       }
+      a:hover{
+        opacity: 0.8;
+      }
     }
     &__right-box2{
       display: none;
@@ -86,7 +82,7 @@ $b:blue;
   }
 }
 
-// キービジュアル(PC)
+// .main-visual(PC)
 .container{
   background-image: url("../isara_images/pc_visual1.jpeg");
   background-size: cover;
@@ -116,7 +112,7 @@ $b:blue;
     }
   } 
 
-  // コンバージョン(PC)
+  // conversion(PC)
   .conversion{
     background-color: $main-orange;
     text-align: center;
@@ -138,6 +134,9 @@ $b:blue;
       height: 30px;
       line-height: 30px;
       display: inline-block;
+    }
+    &__btn:hover{
+      opacity: 0.8;
     }
     &__btn{
       background-color: $pink;
@@ -164,6 +163,10 @@ $b:blue;
         text-decoration: none;
         color:white;
       }
+
+      .sns-btn__twitter:hover{
+        opacity: 0.8;
+      }
       .sns-btn__twitter{
         display: flex;
         justify-content: center;
@@ -171,6 +174,10 @@ $b:blue;
         border-radius: 5px;
         padding: 10px;
       }
+
+      .sns-btn__like:hover{
+        opacity: 0.8;
+      }        
       .sns-btn__like{
         display: flex;
         justify-content: center;
@@ -179,6 +186,9 @@ $b:blue;
         padding: 10px;
         margin-left: 15px;
       }
+      .sns-btn__share:hover{
+        opacity: 0.8;
+      } 
       .sns-btn__share{
         display: flex;
         justify-content: center;
@@ -187,16 +197,31 @@ $b:blue;
         padding: 10px;
         margin-left: 15px;
       }
-      
     }
   }
 
-  // イントロダクション(PC)
+  // introduction(PC)
   .introduction{
   font-size: 25px;
   text-align: center;
   &__title{
+    display: flex;
+    justify-content: center;
     padding-top: 50px;
+    p{
+      line-height:60px ;
+    }
+    span{
+      color: $main-orange;
+      font-weight: bold;
+      font-size: 60px;
+    }
+    .start{
+      margin-right: 50px;
+    }
+    .end{
+      margin-left: 50px;
+    }
   }
   &__text1{
     padding-top: 50px;
@@ -213,6 +238,7 @@ $b:blue;
   &__image{
     margin-top: 20px;
     background-image: url("../isara_images/panorama.jpg");
+    background-position: center;
     background-color:rgba(255,255,255,0.5);
     background-blend-mode:lighten;
     background-size: cover;
@@ -223,7 +249,7 @@ $b:blue;
     display:none;
   }
 
-// アバウト(PC)
+// about(PC)
 .about{
   background-color: $sub-orange;
   text-align: center;
@@ -262,10 +288,11 @@ $b:blue;
   }
 }
 
-// アバウトセカンド(PC)
+// about-second(PC)
 .about-second{
   background-image: url("../isara_images/pc_visual2.jpeg");
   background-size: cover;
+  background-position: center;
   background-color:rgba(255,255,255,0.5);
   background-blend-mode:lighten;
   text-align: center;
@@ -276,6 +303,9 @@ $b:blue;
   &__text{
     font-size: 20px;
     margin-bottom: 30px;
+    span{
+      color: $main-orange;
+    }
   }
   &__wrapper{
     width: 80%;
@@ -317,7 +347,7 @@ $b:blue;
   }
 }
 
-// ラーニング(PC)
+// learning(PC)
 
 .learning{
   text-align: center;
@@ -346,7 +376,7 @@ $b:blue;
   }
 }
 
-// メリット(PC)
+// merit(PC)
 .merit{
   background-color: $sub-orange;
   text-align: center;
@@ -374,6 +404,9 @@ $b:blue;
         font-size: 20px;
         padding: 10px 0;
       }
+      &__text{
+        text-align: left;
+      }
     }
   }
   &__support__wrapper{
@@ -399,10 +432,11 @@ $b:blue;
   }
 }
 
-// ティーチャー（PC）
+// teacher（PC）
 .teacher{
   background-image: url("../isara_images/nature.jpeg");
   background-size: cover;
+  background-position: center;
   background-color:rgba(255,255,255,0.6);
   background-blend-mode:lighten;
   text-align: center;
@@ -450,7 +484,7 @@ $b:blue;
     }
   }
 }
-// ホワイ（PC)
+// why（PC)
 .why{
   background-color: $main-orange;
   text-align: center;
@@ -471,8 +505,21 @@ $b:blue;
   }
 }
 
-// アンサー（PC)
+// answer（PC)
+.a-point{
+  text-align: center;
+  transform: rotate(45deg);
+  color: $main-orange;
+  font-size: 60px;
+  // position: absolute;
+  position: relative;
+  top:-30px;
+  z-index: 5;
+
+  
+}
 .answer{
+  // position: relative;
   text-align: center;
   padding: 50px;
   &__title{
@@ -518,17 +565,20 @@ $b:blue;
   }
 }
 
-//  クラス(PC)
+//  class(PC)
 .class{
   background-image: url("../isara_images/pc_visual6.jpeg");
+  background-position: center;
   background-size: cover;
   color:black;
   text-align: center;
   padding: 80px 0 0 0;
   &__title-a{
+    color: white;
     font-size: 30px;
   }
   &__title-b{
+    color: white;
     font-size: 20px;
     margin: 30px 0;
   }
@@ -536,9 +586,10 @@ $b:blue;
     margin: 0 auto;
     width: 90%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     font-size: 18px;
     &__wrapper{
+      margin-left: 40px;
       border: solid 2px  rgb(3,110,170);
       border-radius: 5px;
       overflow:hidden;
@@ -566,7 +617,7 @@ $b:blue;
   }
 }
 
-// フロウ(PC)
+// flow(PC)
 .flow{
   text-align: center;
   padding: 50px;
@@ -599,7 +650,7 @@ $b:blue;
     }
   }
 }
-
+// .flow-chart(PC)
 .flow-chart{
   padding: 0 150px;
   text-align: center;
@@ -610,6 +661,7 @@ $b:blue;
       padding:30px 80px;
       display: flex;
       &__left{
+        cursor:pointer;
         &__icon{
         }
         &__text{
@@ -633,21 +685,305 @@ $b:blue;
     }
   &__bottom{
     img{
-    width: 100%;
+    width: 80%;
     }
   }
   }
 }
 
+// bangkok(PC)
+.bangkok{
+  color: white;
+  background-image: url("../isara_images/bangkok_1.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  &__c-wrapper{
+    padding: 80px 100px;
+    &__title{
+      font-size: 25px;
+      padding-bottom: 30px;
+    }
+    &__text1{
+      font-size: 13px;
+    }
+    &__lists{
+      list-style: none;
+      &__list{
+        padding: 20px 0;
+      }
+    }
+  }
+  &__image{
+    width: 40%;
+    background-image: url("../isara_images/bangkok_2.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    &__text{
+      font-size: 50px;
+    }
+  }
+}
+// special(PC)
+.special{
+  background-color: $main-orange;
+  text-align: center;
+  padding: 60px;
+  &__title{
+    font-size: 25px;
+    padding-bottom:50px;
+  }
+  &__text{
+    font-size: 13px;
+    color: white;
+    padding-bottom:50px;
+    span{
+      color: black;
+    }
+  }
+  &__contents{
+    &__title{
+      font-size: 25px;
+      background-color: $main-orange;
+      width: 60%;
+      margin: 0 auto;
+      position: relative;
+      bottom:-10px;
+    }
+    &__wrapper{
+      border:solid 3px white;
+      padding: 30px;
+      display: flex;
+      justify-content: space-between;
+      &__box{
+        width: 250px;
+        height: 250px;
+        background-color: white;
+        border-radius: 50%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        
+        &__title{
+          color: $main-orange;
+          font-size: 20px;
+        }
+        &__text{
+          font-size:13px;
+        }
+      }
+    }
+  }
+}
+
+// special-detail（PC)
+.special-detail{
+  background-image: url("../isara_images/pc_visual6.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 70px;
+  &__wrapper{
+    width: 80%;
+    margin: 0 auto;
+    &__title1{
+    padding-bottom: 30px;
+    font-size: 25px;
+    }
+    &__text1{
+    padding-bottom: 60px;
+    }
+    &__title2{
+    font-size: 25px;
+    padding-bottom: 50px;
+    }
+    &__text2{
+    padding-bottom: 10px;
+    }
+  }
+}
+
+// learning2(PC)
+.learning2{
+  padding:20px;
+  &__title{
+    text-align: center;
+    font-size: 25px;
+    padding:50px 0;
+  }
+  &__text{
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 50px;
+
+  }
+  &__contents{
+    display: flex;
+    justify-content: center;
+    &__image{
+      width: 30%;
+      padding: 30px;
+      img{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    &__wrapper{
+      width: 70%;
+      padding:20px;
+      &__text1{
+        padding-bottom: 30px;
+        
+      }
+      &__list{
+        ul{
+          padding-bottom: 30px;
+          list-style: none;
+          li{
+          }
+        }
+      }
+      &__text2{}
+    }
+  }
+}
+
+// contactform(PC)
+.contactform{
+  background-color: $main-orange;
+  padding: 50px 0;
+  &__title{
+    font-size: 25px;
+    text-align: center;
+  }
+  &__text{
+    text-align: center;
+    padding: 30px 0;
+  }
+  &__wrapper{
+    margin: 0 auto;
+    form{
+      margin:0 auto;
+      div{
+        padding: 15px;
+      }
+      input,textarea{
+        margin: 0 auto;
+        display: block;
+        width: 60%;
+        border-radius: 5px;
+        border: none;
+        height: 50px;
+        font-size: 13px;
+        padding-left: 10px;
+      }
+      textarea{
+        height: 100px;
+      }
+      button{
+        color: white;
+        background-color: $pink;
+        margin: 0 auto;
+        display: block;
+        width: 80%;
+        border-radius: 30px;
+        height: 50px;
+        border: none;
+        font-size: 20px;
+      }
+    }
+  }
+}
+// questions(PC)
+.questions{
+  padding: 50px;
+  label{
+    display: block;
+    margin: 5px 0;
+    padding : 20px;
+    font-weight: bold;
+    cursor :pointer;
+    // transition: all 0.5s;
+    border: 1px solid rgb(199, 197, 197);
+    border-radius: 5px;
+    .far{
+      color:rgb(31,111,169);
+    }
+  }
+  label:hover{
+    background :$main-orange;
+    text-decoration: underline;
+
+  }
+  input {
+    display: none;
+  }
+  .accshow{
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    // opacity: 0;
+    transition: 0.8s;
+
+  }
+  .cssacc:checked + .accshow {
+    height: auto;
+    padding: 5px;
+    // opacity: 1;
+  }
+}
+
+//footer(PC)
+.footer{
+  background-color: rgb(236,236,236);
+  text-align: center;
+  padding: 20px;
+  font-size: 13px;
+  &__copy{
+    padding-bottom: 15px;
+    span{
+      color:rgb(31,111,169);
+    }
+  }
+  &__icons{
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    a{
+      text-decoration: none;
+
+    }
+    &__btn{
+      margin-left:20px ;
+      background-color: rgb(24,119,242);
+      border-radius: 5px;
+      color: white;
+      padding:5px;
+    }
+    .tweet{
+      background-color: rgb(27,149,224);
+
+    }
+  }
+}
+
+
+
+
+
+
 
 // タブレットレイアウト---------------------------------------------------------------------------------------
 @media (max-width:1000px) {
-  .responsive{
-    background-color:yellow;
-    width:50%;
-    height: 30px;
-  }
-  // ヘッダー（タブレット）
+  // header（タブレット）
   .header{
     &__container{
       
@@ -672,7 +1008,7 @@ $b:blue;
     }
   }
   
-  // キービジュアル（タブレット）
+  // main-visual（タブレット）
   .container{
     .main-visual{
       width: 100%;
@@ -687,7 +1023,7 @@ $b:blue;
     }
   } 
 
-  // コンバージョン（タブレット）
+  // conversion（タブレット）
   .conversion{
     .conversion-wrapper{
       width: 100%;
@@ -718,7 +1054,7 @@ $b:blue;
       }
     }
   }
-  // イントロダクション（タブレット）
+  // introduction（タブレット）
   .introduction{
     font-size: 17px;
     &__title{
@@ -738,7 +1074,7 @@ $b:blue;
     display: none;
   }
 
-// アバウト（タブレット）
+// about（タブレット）
 .about{
   &__title{
     padding: 30px;
@@ -765,7 +1101,7 @@ $b:blue;
   }
 }
 
-// アバウトセカンド（タブレット）
+// about-second（タブレット）
 .about-second{
   &__title{
     font-size: 20px;
@@ -799,7 +1135,7 @@ $b:blue;
     }
   }
 }
-// ラーニング（タブレット）
+// learning（タブレット）
 .learning{
   &__title{
   }
@@ -817,7 +1153,7 @@ $b:blue;
   }
 }
 
-// メリット（タブレット）
+// merit（タブレット）
 .merit{
   padding: 10px;
   &__title1{
@@ -854,7 +1190,7 @@ $b:blue;
   }
 }
 
-// ティーチャー（タブレット）
+// teacher（タブレット）
 .teacher{
   padding: 20px;
   &__title{
@@ -880,7 +1216,7 @@ $b:blue;
     }
   }
 }
-// ホワイ（タブレット)
+// why（タブレット)
 .why{
   &__icon{
   }
@@ -888,7 +1224,7 @@ $b:blue;
   }
 }
 
-// アンサー（タブレット)
+// answer（タブレット)
 .answer{
   &__title{
     span{
@@ -913,7 +1249,7 @@ $b:blue;
   }
 }
 
-//  クラス(タブレット)
+//  class(タブレット)
 .class{
   padding: 0;
   &__title-a{
@@ -941,7 +1277,7 @@ $b:blue;
     }
   }
 }
-// フロウ
+// flow(タブレット）
 .flow{
   padding: 10px;
   &__title{
@@ -961,6 +1297,7 @@ $b:blue;
     }
   }
 }
+// flow-chart(タブレット)
 .flow-chart{
   padding: 10px;
   &__wrapper{
@@ -996,20 +1333,151 @@ $b:blue;
   }
 }
 
+// bangkok（タブレット）
+.bangkok{
+  &__c-wrapper{
+    &__title{
+    }
+    &__text1{
+    }
+    &__lists{
+      &__list{
+      }
+    }
+  }
+  &__image{
+    &__text{
+    }
+  }
+}
+
+// special(タブレット)
+.special{
+  &__title{
+  }
+  &__text{
+  }
+  &__contents{
+    &__title{
+    }
+    &__wrapper{
+      flex-direction: column;
+      align-items: center;
+      &__box{
+        margin-bottom:20px;
+        &__title{
+          color: $main-orange;
+        }
+        &__text{
+        }
+      }
+    }
+  }
+}
+
+// special-detail（タブレット)
+.special-detail{
+  &__wrapper{
+    &__title1{
+    }
+    &__text1{
+    }
+    &__title2{
+    }
+    &__text2{
+    }
+  }
+}
+
+// learning2(タブレット)
+.learning2{
+  padding: 10px;
+  &__title{
+  }
+  &__text{
+  }
+  &__contents{
+    flex-direction: column;
+    &__image{
+      width: 100%;
+      height: 100%;
+      img{
+      }
+    }
+    &__wrapper{
+      width: 100%;
+      &__text1{
+      }
+      &__list{
+        ul{
+          li{
+          }
+        }
+      }
+      &__text2{}
+    }
+  }
+}
+
+// contactform(タブレット）
+.contactform{
+  padding: 30px 0;
+  &__title{
+  }
+  &__text{
+  }
+  &__wrapper{
+    form{
+      div{
+        padding: 15px ;
+      }
+      input,textarea{
+        width: 100%;
+      }
+      textarea{
+      }
+      button{
+      }
+    }
+  }
+}
+
+// questions(タブレット)
+.questions{
+  label{
+  }
+  label:hover{
+  }
+  input {
+  }
+  .accshow{
+  }
+  .cssacc:checked + .accshow {
+}
+}
+
+//footer(タブレット)
+.footer{
+  &__copy{
+  }
+  &__icons{
+    a{
+    }
+    &__btn{
+    }
+    .tweet{
+    }
+  }
+}
+
+
 
 } //タブレットメディアクエリ終わりーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 
-
-
 // スマホレイアウト
 @media (max-width:670px) {
-  .responsive{
-    background-color:blue;
-    width: 100%;
-    height: 30px
-  }
 
-  // ヘッダー（スマホ）
+  // header（スマホ）
   .header{
     &__container{
       padding: 0;
@@ -1030,6 +1498,9 @@ $b:blue;
         display: none;
         a{
         }
+      }
+      &__right-box2:hover{
+        opacity: 0.8;
       }
       &__right-box2{
         height: 75px;
@@ -1054,7 +1525,7 @@ $b:blue;
     }
   }
   
-  // キービジュアル（スマホ）
+  // main-visual（スマホ）
   .container{
     .main-visual{
       widht:100%;
@@ -1069,7 +1540,7 @@ $b:blue;
       }
     }
   } 
-    // コンバージョン（スマホ）
+    // conversion（スマホ）
     .conversion{
       font-size: 18px;
       .conversion-wrapper{
@@ -1101,7 +1572,7 @@ $b:blue;
         }
       }
     }
-    // イントロダクション（スマホ）
+    // introduction（スマホ）
     .introduction{
       display: none;
     }
@@ -1136,7 +1607,7 @@ $b:blue;
       }
     }
 
-// アバウト（スマホ）
+// about（スマホ）
 .about{
   &__title{
   }
@@ -1156,7 +1627,7 @@ $b:blue;
   }
 }
 
-// アバウトセカンド（スマホ）
+// about-second（スマホ）
 .about-second{
   &__title{
     font-size: 16px;
@@ -1180,7 +1651,7 @@ $b:blue;
     }
   }
 
-  // ラーニング（スマホ）
+  // learning（スマホ）
 }
 .learning{
   &__title{
@@ -1196,7 +1667,7 @@ $b:blue;
   &__text2{
   }
 }
-// メリット（スマホ）
+// merit（スマホ）
 .merit{
   &__title1{
     padding: 10px;
@@ -1232,7 +1703,7 @@ $b:blue;
   }
 }
 
-// ティーチャー（スマホ）
+// teacher（スマホ）
 
 .teacher{
   padding: 20px;
@@ -1259,7 +1730,7 @@ $b:blue;
     }
   }
 }
-// ホワイ（スマホ)
+// why（スマホ)
 .why{
   &__icon{
   }
@@ -1268,7 +1739,7 @@ $b:blue;
   }
 }
 
-// アンサー（スマホ)
+// answer（スマホ)
 .answer{
   padding: 5px;
   &__title{
@@ -1298,7 +1769,7 @@ $b:blue;
     }
   }
 }
-// クラス(スマホ）
+// class(スマホ）
 .class{
   &__title-a{
   }
@@ -1306,6 +1777,7 @@ $b:blue;
   }
   &__container{
     &__wrapper{
+      margin: 10px 0;
       &__title{
       }
       ul{
@@ -1319,6 +1791,7 @@ $b:blue;
   }
 }
 
+// flow-chart(スマホ)
 .flow-chart{
   text-align: left;
   &__wrapper{
@@ -1328,6 +1801,7 @@ $b:blue;
       padding:10px ;
       display: flex;
       flex-direction: column;
+      margin-bottom: 10px;
       &__left{
         display: flex;
         position: relative;
@@ -1343,13 +1817,15 @@ $b:blue;
         }
         &__arrow{
           position: absolute;
-          right: 10px;
+          top: 15px;
+          right: 15px;
           display: block;
-          display: flex;
-          flex-direction: column;
+          font-size: 20px;
+          font-weight: bold;
         }
       }
       &__right{
+        display: none;
         padding: 5px;
         &__top{
 
@@ -1368,6 +1844,157 @@ $b:blue;
   }
   }
 }
+
+//bangkok（スマホ）
+.bangkok{
+  &__c-wrapper{
+    padding: 30px;
+    &__title{
+    }
+    &__text1{
+    }
+    &__lists{
+      &__list{
+      }
+    }
+  }
+  &__image{
+    display: none;
+    &__text{
+    }
+  }
+}
+
+// special(スマホ)
+.special{
+  padding: 30px;
+  &__title{
+    font-size: 20px;
+  }
+  &__text{
+  }
+  &__contents{
+    &__title{
+      font-size: 20px;
+    }
+    &__wrapper{
+      display: block;
+      padding:  30px 0;
+      &__box{
+        background-color: $main-orange;
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        margin-bottom:20px;
+        flex-direction: row;
+        &__title{
+          font-size: 15px;
+          background-color: white;
+          color: $main-orange;
+          height: 70px;
+          width: 70px;
+          border-radius: 50%;
+          line-height: 70px;
+        }
+        &__text{
+          color: white;
+          width: 60%;
+          margin-left:10px;
+        }
+      }
+    }
+  }
+}
+
+// special-detail（スマホ)
+.special-detail{
+  &__wrapper{
+    &__title1{
+    }
+    &__text1{
+    }
+    &__title2{
+    }
+    &__text2{
+    }
+  }
+}
+
+
+// learning2(スマホ)
+.learning2{
+  &__title{
+  }
+  &__text{
+  }
+  &__contents{
+    &__image{
+      img{
+      }
+    }
+    &__wrapper{
+      &__text1{
+      }
+      &__list{
+        ul{
+          li{
+          }
+        }
+      }
+      &__text2{}
+    }
+  }
+}
+
+// contactform(スマホ）
+.contactform{
+  &__title{
+  }
+  &__text{
+  }
+  &__wrapper{
+    form{
+      div{
+      }
+      input,textarea{
+      }
+      textarea{
+      }
+      button{
+      }
+    }
+  }
+}
+
+// questions(スマホ)
+.questions{
+  label{
+  }
+  label:hover{
+  }
+  input {
+  }
+  .accshow{
+  }
+  .cssacc:checked + .accshow {
+}
+}
+
+//footer(スマホ)
+.footer{
+  font-size: 10px;
+  &__copy{
+  }
+  &__icons{
+    a{
+    }
+    &__btn{
+    }
+    .tweet{
+    }
+  }
+}
+
 
 
 

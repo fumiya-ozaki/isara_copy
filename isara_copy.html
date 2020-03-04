@@ -3,18 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta name="viewport" content="width=1024" /> -->
     <link rel='stylesheet' href='./reset.css'>
     <link rel='stylesheet' href='css/style.css'>
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Isara</title>
   </head>
 
   <body>
-    <!-- レスポンシブ確認用 -->
-    <div class="responsive">aaaa</div>
-    <!-- ヘッダー -->
+    <!-- header -->
     <div class="header">
       <div class="header__container">
         <div class="header__container__left-box">
@@ -31,12 +29,12 @@
           <div class="header__container__right-box2__text">
             資料請求
           </div>
-
         </div>
+
       </div>
     </div>
 
-    <!-- メインビジュアル -->
+    <!-- main-visual -->
     <div class="container">
       <div class="main-visual">
         <h1 class="main-visual__title">プログラミングで<br>人生の安定を手にいれよう</h1>
@@ -45,7 +43,7 @@
       </div>
     </div>
 
-    <!-- コンバージョン -->
+    <!-- conversion -->
     <div class="conversion">
       <div class="conversion-wrapper">
         <h3 class="conversion__title1">まずは２０日間で、<br>月１０万円稼げるスキルを手にいれよう。</h3>
@@ -75,9 +73,13 @@
       </div>
     </div>
 
-    <!-- イントロダクション -->
+    <!-- introduction -->
     <div class="introduction">
-      <h1 class="introduction__title">エンジニアとして本当の自由を手に入れるためには？</h1>
+      <h1 class="introduction__title">
+        <span class="start">「</span>
+        <p>エンジニアとして本当の自由を手に入れるためには？</p>
+        <span class="end">」</span>
+      </h1>
       <h1 class="introduction__text1">エンジニア需要の高まりに伴い、プログラミングスクールが増えています。<br>しかしそこでの学習の先は、 提携して決められた就職先に就職すること。</h1>
       <h1 class="introduction__text2">これで本当にいいのですか？<br>日本人エンジニアはアメリカと較べて給料が格段に低い。<br>その理由がここにあり、 エンジニアは自分の給料をコントロールすべきなのです。</h1>
       <h1 class="introduction__text3">スキルを身につけたエンジニアは、人生をコントロールすることでより自由に。<br>そこで必要なのが<span>「稼ぐ力」</span>です。</h1>
@@ -92,7 +94,7 @@
       <h1 class="introduction2__text4">スキルを身につけたエンジニアは、<br>人生をコントロールすることでより自由に。<br>そこで必要なのが<span>「稼ぐ力」</span>です。</h1>
       <div class="introduction2__image"></div>
     </div>
-<!-- アバウト -->
+<!-- about -->
     <div class="about">
       <h1 class="about__title">ノマドエンジニア育成講座<br>iSara[イサラ]とは</h1>
       <h1 class="about__text">「 稼ぐこと 」にフォーカスした<br class="br-sp" />Webエンジニア育成講座です。</h1>
@@ -122,13 +124,13 @@
         </div>
       </div>
     </div>
-<!-- アバウトセカンド -->
+<!-- about-second -->
     <div class="about-second">
       <div class="about-second__title">
         iSaraで「基本的なプログラミングスキル」は教えません
       </div>
       <div class="about-second__text">
-        基礎的なプログラミングスキルは<br class="br-sp" />無料で学べる時代。<br>iSaraでは、基礎知識学習は<br class="br-sp" />事前課題とチャットサポートのみ。
+        基礎的なプログラミングスキルは<br class="br-sp" />無料で学べる時代。<br>iSaraでは、基礎知識学習は<br class="br-sp" /><span>事前課題</span>と<span>チャットサポート</span>のみ。
       </div>
       <div class="about-second__wrapper">
         <div class="about-second__wrapper__box">
@@ -152,7 +154,7 @@
       フリーランスには<span>プログラミングスキル以外</span>が大切。
     </div>
     </div>
-<!-- ラーニング -->
+<!-- learning -->
     <div class="learning">
       <h1 class="learning__title">
         iSara[イサラ]で学べること
@@ -179,7 +181,7 @@
       </h2>
     </div>
 
-<!-- メリット -->
+<!-- merit -->
     <div class="merit">
       <h2 class="merit__title1">
         他のプログラミングスクールと<br class="br-sp" />ここが違う！
@@ -194,7 +196,7 @@
             現役フリーランスから学べる
           </div>
           <div class="merit__wrapper__box__text">
-            他のプログラミングスクールとは違い、<br class="br-pc" /><br class="br-sp" />実際にフリーランスとして活動している<br class="br-pc" /><br class="br-sp" />エンジニアが直接講師を勤めます。
+            他のプログラミングスクールとは違い、実際にフリーランスとして活動しているエンジニアが直接講師を勤めます。
           </div>
         </div>
         <div class="merit__wrapper__box">
@@ -203,7 +205,7 @@
             実践を通じて学べる
           </div>
           <div class="merit__wrapper__box__text">
-            フリーランスにとって最短の学習方法は「実践」。<br class="br-sp" />iSaraでは実案件を通して学びます。<br class="br-pc" /><br class="br-sp" />現役フリーランサーの案件サポートに加え、<br class="br-sp" />クラウドソーシングを活用。<br class="br-sp" />初心者の自分じゃ無理と思うかもですが、<br class="br-pc" /><br class="br-sp" />現役フリーランスがサポートしますので大丈夫。
+            フリーランスにとって最短の学習方法は「実践」。iSaraでは実案件を通して学びます。現役フリーランサーの案件サポートに加え、クラウドソーシングを活用。初心者の自分じゃ無理と思うかもですが、現役フリーランスがサポートしますので大丈夫。
           </div>
         </div>
         <div class="merit__wrapper__box">
@@ -212,7 +214,7 @@
             現役フリーランスから学べる
           </div>
           <div class="merit__wrapper__box__text">
-            他のプログラミングスクールとは違い、<br class="br-sp" />実際にフリーランスとして活動している<br class="br-sp" />エンジニアが直接講師を勤めます。
+            他のプログラミングスクールとは違い、実際にフリーランスとして活動しているエンジニアが直接講師を勤めます。
           </div>
         </div>
       </div>
@@ -235,7 +237,7 @@
       </div>
     </div>
 
-    <!-- ティーチャー -->
+    <!-- teacher -->
     <div class="teacher">
       <h1 class="teacher__title">
         <div i class="fas fa-address-card"></div>
@@ -303,7 +305,7 @@
         </div>
       </div>
     </div>
-<!-- ホワイ -->
+<!-- why -->
     <div class="why">
       <div class="why__icon">
         Q&A
@@ -312,7 +314,8 @@
         ノマドエンジニアとして自由に稼ぐことは<br>「 本当に 」可能なのか？
       </div>
     </div>
-<!-- アンサー -->
+    <!-- answer -->
+    <div class="a-point">■</div>
     <div class="answer">
       <div class="answer__title">
         実現可能です<br>
@@ -363,7 +366,7 @@
         </div>
       </div>
     </div>
-<!-- クラス -->
+<!-- class -->
     <div class="class">
       <div class="class__title-a">
         iSara[イサラ]で学べる内容
@@ -410,7 +413,7 @@
         つまりリスク０で参加できます。
       </div>
     </div>
-
+<!-- flow -->
     <div class="flow">
       <div class="flow__title">
         <div i class="fas fa-laptop-code"></div>
@@ -459,8 +462,8 @@
         </div>
       </div>
     </div>
-    
-    <div class="flow-chart">
+    <!-- flow-chart -->
+    <div class="flow-chart" id="faq-list">
       <div class="flow-chart__wrapper">
         <div class="flow-chart__wrapper__top">
           <div class="flow-chart__wrapper__top__left">
@@ -471,11 +474,10 @@
               Skypeで事前コンサル
             </div>
             <div class="flow-chart__wrapper__top__left__arrow">
-              <div i class="fas fa-sort-up"></div>
-              <div i class="fas fa-sort-down"></div>
+              <span>＋</span>
             </div>
           </div>
-          <div class="flow-chart__wrapper__top__right">
+          <div class="flow-chart__wrapper__top__right answer-a">
             <div class="flow-chart__wrapper__top__right__top">
               現在のスキルの状況、パソコンの環境説明、渡航での注意点を話します。簡単なテストあり
             </div>
@@ -488,9 +490,7 @@
           <img src="./isara_images/flowline1.png" alt="">
         </div>
       </div>
-    </div>
     
-    <div class="flow-chart">
       <div class="flow-chart__wrapper">
         <div class="flow-chart__wrapper__top">
           <div class="flow-chart__wrapper__top__left">
@@ -501,12 +501,10 @@
               事前課題の提出
             </div>
             <div class="flow-chart__wrapper__top__left__arrow">
-              <div i class="fas fa-sort-up"></div>
-              <div i class="fas fa-sort-down"></div>
+              <span>＋</span>
             </div>
-
           </div>
-          <div class="flow-chart__wrapper__top__right">
+          <div class="flow-chart__wrapper__top__right answer-a">
             <div class="flow-chart__wrapper__top__right__top">
               出発前の１ヶ月前に事前課題を送ります。
             </div>
@@ -519,8 +517,6 @@
           <img src="./isara_images/flowline2.png" alt="">
         </div>
       </div>
-    </div>
-    <div class="flow-chart">
       <div class="flow-chart__wrapper">
         <div class="flow-chart__wrapper__top">
           <div class="flow-chart__wrapper__top__left">
@@ -531,12 +527,10 @@
               現地に渡航
             </div>
             <div class="flow-chart__wrapper__top__left__arrow">
-              <div i class="fas fa-sort-up"></div>
-              <div i class="fas fa-sort-down"></div>
+              <span>＋</span>
             </div>
-
           </div>
-          <div class="flow-chart__wrapper__top__right">
+          <div class="flow-chart__wrapper__top__right answer-a">
             <div class="flow-chart__wrapper__top__right__top">
               到着日には空港でお出迎えし、初日のオリエンテーションを行います。滞在先は空港からすぐの出来たてシェアハウス。美味しいタイ料理などもご紹介します。
             </div>
@@ -549,8 +543,6 @@
           <img src="./isara_images/flowline1.png" alt="">
         </div>
       </div>
-    </div>
-    <div class="flow-chart">
       <div class="flow-chart__wrapper">
         <div class="flow-chart__wrapper__top">
           <div class="flow-chart__wrapper__top__left">
@@ -561,12 +553,10 @@
               実案件を通して学ぶ
             </div>
             <div class="flow-chart__wrapper__top__left__arrow">
-              <div i class="fas fa-sort-up"></div>
-              <div i class="fas fa-sort-down"></div>
+              <span>＋</span>
             </div>
-
           </div>
-          <div class="flow-chart__wrapper__top__right">
+          <div class="flow-chart__wrapper__top__right answer-a" >
             <div class="flow-chart__wrapper__top__right__top">
               現役フリーランスが抱える案件に加え、クラウドソーシングを使って実案件をこなします。
             </div>
@@ -579,8 +569,6 @@
           <img src="./isara_images/flowline2.png" alt="">
         </div>
       </div>
-    </div>
-    <div class="flow-chart">
       <div class="flow-chart__wrapper">
         <div class="flow-chart__wrapper__top">
           <div class="flow-chart__wrapper__top__left">
@@ -591,12 +579,10 @@
               帰国後の仕事獲得サポート付き
             </div>
             <div class="flow-chart__wrapper__top__left__arrow">
-              <div i class="fas fa-sort-up"></div>
-              <div i class="fas fa-sort-down"></div>
+              <span>＋</span>
             </div>
-
           </div>
-          <div class="flow-chart__wrapper__top__right">
+          <div class="flow-chart__wrapper__top__right answer-a">
             <div class="flow-chart__wrapper__top__right__top">
               経験年数の少ないフリーランスが高単価で継続的に仕事受注するコツ、それがチームを組むことです。
             </div>
@@ -609,6 +595,221 @@
         </div>
       </div>
     </div>
+    <!-- bangkok -->
+    <div class="bangkok">
+      <div class="bangkok__c-wrapper">
+        <div class="bangkok__c-wrapper__title">なぜバンコクなのか？</div>
+        <div class="bangkok__c-wrapper__text1">ここまで見ると、iSaraは日本でも実施可能に見えます。<br>しかし、バンコクを選んだのには理由があります。</div>
+        <ul class="bangkok__c-wrapper__lists">
+          <li class="bangkok__c-wrapper__lists__list">
+            ・プログラミングフリーランスの最先端
+          </li>
+          <li class="bangkok__c-wrapper__lists__list">
+            ・水準は日本と同じなのに、生活費が安い（毎月８万円ほど）
+          </li>
+          <li class="bangkok__c-wrapper__lists__list">
+            ・昼、夜共に遊びが充実（稼ぐモチベーションアップと息抜きにGOOD）
+          </li>
+          <li class="bangkok__c-wrapper__lists__list">
+            ・日本人が住みやすい（食事が美味しい / 気候が良い / 親日である）
+          </li>
+        </ul>
+        <div class="bangkok__c-wrapper__text2"></div>
+        
+      </div>
+      <div class="bangkok__image">
+        <div class="bangkok__image__text">
+          BANGKOK
+        </div>
+      </div>
+      
+    </div>
+<!-- special -->
+    <div class="special">
+      <div class="special__title">
+        <div i class="fas fa-gift"></div>
+          iSara受講生への参加特典
+      </div>
+      <div class="special__text">
+        講座費用258,000円以上の金額が稼げるまでの「永久サポート延長」<span>を追加します。つまり、</span>実質０円<span>です。</span>
+      </div>
+      <div class="special__contents">
+        <div class="special__contents__title">
+          iSaraは『実質０円』！更なる特典もあります。
+        </div>
+        <div class="special__contents__wrapper">
+          <div class="special__contents__wrapper__box">
+            <div class="special__contents__wrapper__box__title">
+              特典１
+            </div>
+            <div class="special__contents__wrapper__box__text">
+              講座費用258,000円以上の金額が稼げるまで、「永久サポート延長」。リスク０で参加できます。
+            </div>
+          </div>
+          <div class="special__contents__wrapper__box">
+            <div class="special__contents__wrapper__box__title">
+              特典１
+            </div>
+            <div class="special__contents__wrapper__box__text">
+              講座費用258,000円以上の金額が稼げるまで、「永久サポート延長」。リスク０で参加できます。
+            </div>
+          </div>
+          <div class="special__contents__wrapper__box">
+            <div class="special__contents__wrapper__box__title">
+              特典１
+            </div>
+            <div class="special__contents__wrapper__box__text">
+              講座費用258,000円以上の金額が稼げるまで、「永久サポート延長」。リスク０で参加できます。
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- special-detail -->
+    <div class="special-detail">
+      <div class="special-detail__wrapper">
+      <div class="special-detail__wrapper__title1">iSaraはボランティアではありません</div>
+      <div class="special-detail__wrapper__text1">ここまでみると、実質０円で各種サポートもある、特典が多すぎて逆に怪しい。
+        そう思われるかもしれません。
+        しかし、iSaraが目指すことは異なります。</div>
+      <div class="special-detail__wrapper__title2">月１０万円稼げるエンジニアを輩出し続ける。</div>
+      <div class="special-detail__wrapper__text2">最大の価値がこれです。
+        iSaraの卒業生が稼ぎ続けることで、小さな経済が動き始めます。
+        ここに最大の価値があり、この講座はその序章にすぎません。</div>
+      </div>
+    </div>
+    <!-- learning-2 -->
+    <div class="learning2">
+      <div class="learning2__title">
+        創業者からのメッセージ
+      </div>
+      <div class="learning2__text">
+        「一生もののスキル」を身につけ、ノマドライフを楽しもう！
+      </div>
+      <div class="learning2__contents">
+        <div class="learning2__contents__image">
+          <img src="./isara_images/cat_3.jpeg" alt="">
+        </div>
+        <div class="learning2__contents__wrapper">
+          <div class="learning2__contents__wrapper__text1">
+            初めまして。「○○○○○○○○」創業者の○○○○と申します。iSaraの開講は、僕達講師陣にとってもとても大きな挑戦です。今回、参加者に圧倒的な価値提供をするために、超少人数制だからできる内容を用意しました。
+          </div>
+          <div class="learning2__contents__wrapper__list">
+            <ul>
+              <li>・「Webエンジニアとして稼ぐ」に特化した超実践的カリキュラム</li>
+              <li>・フリーランスとして生計を立て、いつでも世界中を旅できるスキル、収入のある講師陣のみを厳選</li>
+              <li>・講座参加者が25万8,000円の参加費以上を稼ぐまでの無期限サポート延長</li>
+            </ul>
+          </div>
+          <div class="learning2__contents__wrapper__text2">
+            ここまでのカリキュラムを備えた講座は、世界で唯一iSaraだけでしょう。 iSaraでプログラミングや営業を学ぶことで、「一生ものの潰しが効くスキル」が身につきます。 もちろん勉強だけでなく、バンコクを楽しめるプログラムも用意しています！３ヶ月間徹底的にサポートします。ぜひバンコクでお会いしましょう。
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- contactform -->
+    <div class="contactform">
+      <div class="contactform__title">
+        <div i class="fas fa-copy"></div>
+        資料請求フォーム
+      </div>
+      <div class="contactform__text">
+        まずは無料で資料請求からどうぞ。
+      </div>
+      <div class="contactform__wrapper">
+        <form action="#" method="#">
+          <div>
+            <!-- <label for="name">Name:</label> -->
+            <input type="text" id="lname" name="user_fname" placeholder="姓">
+          </div>
+          <div>
+            <!-- <label for="name">Name:</label> -->
+            <input type="text" id="fname" name="user_lname" placeholder="名">
+          </div>
+          <div>
+            <!-- <label for="mail">E-mail:</label> -->
+            <input type="email" id="email" name="user_mail" placeholder="メールアドレス">
+          </div>
+          <div>
+            <!-- <label for="msg">Message:</label> -->
+            <textarea id="note" name="user_message" placeholder="質問などはこちら（空欄でもOKです）"></textarea>
+          </div>
+          <div class="button">
+            <button type="submit">送信</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+<!-- questions -->
+    <div class="questions">
+    <label for="label1">
+      <div i class="far fa-question-circle"></div>
+      プログラミングスキルは必要ですか？</label>
+    <input type="checkbox" id="label1" class="cssacc" />
+    <div class="accshow">
+      <p>
+        いいえ、必要ありません。しかし、iSaraでは参加費以上の金額が稼げることを保障しています。 従って、事前通話面談時点で簡単なテストを実施し、場合によってはお断りをしております。この点だけはご了承ください。
+      </p>
+    </div>
+    <label for="label2">
+      <div i class="far fa-question-circle"></div>
+      参加費以上に稼げなかったらどうなりますか？</label>
+    <input type="checkbox" id="label2" class="cssacc" />
+    <div class="accshow">
+      <p>
+        参加費である258,000円以上の金額をトータルで稼ぐまで、無期限でサポート延長いたします。（講座参加後、週30時間以上の実践をすることと、週１回の実践報告をすることが延長条件です。）きちんと学び実践すれば、フリーランスでも収入を作ることは十分に可能です。
+      </p>
+    </div>
+    <label for="label3">
+      <div i class="far fa-question-circle"></div>
+      滞在中の宿泊先はどうなりますか？</label>
+    <input type="checkbox" id="label3" class="cssacc" />
+    <div class="accshow">
+      <p>
+        宿泊費用が必要ですが、iSara提携のホステルに宿泊することになりますので心配はありません。
+      </p>
+    </div>
+    <label for="label4">
+      <div i class="far fa-question-circle"></div>
+      滞在中の食事はどうなりますか？</label>
+    <input type="checkbox" id="label4" class="cssacc" />
+    <div class="accshow">
+      <p>
+        拠点となる新築シェアハウスの周辺に、50バーツ程度の（160円）安価な飲食店が多数あります。 日本食レストランもありますし、出前を取ることも可能です。
+      </p>
+    </div>
+    </div>
+
+    <div class="footer">
+    <div class="footer__copy">
+      バンコクのノマドエンジニア育成講座、iSara[イサラ]<br>Copyright ©︎ <span>iSara</span> All Rights Reserved.
+    </div>
+
+    <div class="footer__icons">
+        <a href="#" name="テスト">
+          <div class="footer__icons__btn tweet">
+            <div i class="fab fa-twitter">ツイート</div>
+          </div>
+        </a>
+        <a href="#" name="テスト">
+          <div class="footer__icons__btn">
+            <div i class="fas fa-thumbs-up">いいね！</div>
+          </div>
+        </a>
+        <a href="#" name="テスト">
+          <div class="footer__icons__btn">
+            <div class="share-text">シェア</div>
+          </div>
+        </a>
+      </div>
+      <div class="footer__copy">
+        Designed by 〇〇 / Developed by 〇〇
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
   </body>
   </html>
