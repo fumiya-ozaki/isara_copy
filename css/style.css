@@ -1384,4 +1384,7 @@
   .footer {
     font-size: 10px;
   }
+  .footer__icons {
+    width: 100%;
+  }
 }
